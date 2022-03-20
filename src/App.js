@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Details from "./components/Details/Details";
+import Device from "./components/Device/Device";
+import Watch from "./components/Watch/Watch";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ border: "3px solid green", margin: "10px" }} className="App">
+      <Device name="UPhone" price="1224"></Device>
+      <Watch></Watch>
     </div>
   );
 }
